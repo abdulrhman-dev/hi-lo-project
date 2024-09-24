@@ -1,9 +1,9 @@
 #include <iostream>
 #include <random>
+#include "play_again_prompt.h" 
 
 int getGuess(int count);
 bool playHiLo(int number);
-bool playAgain();
 
 int main()
 {
@@ -15,4 +15,3 @@ int main()
 
 	return 0;
 }
-

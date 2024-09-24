@@ -132,6 +132,9 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="play_again_prompt.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="play_again_prompt.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
