@@ -1,12 +1,12 @@
 #include <iostream>
 
 int getGuess(int count);
-int guessed_num;
 
 bool playHiLo(int number) 
 {
 	for (int i = 1; i < 8; i++)
 	{
+		int guessed_num;
 		guessed_num = getGuess(i);
 		if (guessed_num == number)
 		{
