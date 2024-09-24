@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="hi-lo-project.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="guess_input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="play_again_prompt.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
