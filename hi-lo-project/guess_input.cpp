@@ -11,7 +11,7 @@ int getGuess(int count)
 		{
 			std::cout << "The number is between 1 and 100 \n";
 		}
-	} while (guess < 0 || guess > 100);
+	} while (!(guess > 0 && guess < 100));
 
 	return guess;
 }
