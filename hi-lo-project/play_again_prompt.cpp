@@ -2,22 +2,22 @@
 
 bool playAgain() {
 	while (true) {
-		std::cout << "Do you want to try again (y/n)? ";
-		char answer{};
-		std::cin >> answer;
+		char check;
 
-		bool success{ std::cin };
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		std::cin.clear();
+		std::cout << "Would you like to play again (y/n)?\n";
+		std::cin >> check;
 
-		if (!success)
-			continue;
-
-		if (answer == 'y')
+		if (check == 'y' || check == 'Y') {
 			return true;
-		else if (answer == 'n')
+		}
+		else if (check == 'n' || check == 'N')
+		{
 			return false;
+		}
+		else {
+			// Clear the error state and ignore invalid input
+			std::cin.clear();
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		}
 	}
-
-	return false;
 }
