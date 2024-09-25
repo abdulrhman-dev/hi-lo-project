@@ -10,9 +10,9 @@ int main()
 	std::mt19937 gen(rd());
 	std::uniform_int_distribution<int> dis(1, 100);
 
-	int randomNumber = dis(gen);
 
 	do {
+		int randomNumber = dis(gen);
 		playHiLo(randomNumber);
 	} while (playAgain());
 
