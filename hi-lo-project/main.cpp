@@ -12,11 +12,8 @@ int main()
 
 	int randomNumber = dis(gen);
 
-	return 0;
-	int number{ 27 };
-
 	do {
-		playHiLo(number);
+		playHiLo(randomNumber);
 	} while (playAgain());
 
 	return 0;

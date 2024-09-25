@@ -17,6 +17,8 @@ bool playHiLo(int number)
 		if (guessed_num < number)
 			std::cout << "Your guess is too low\n";
 	}
-	std::cout << "Sorry, you used all 7 guesses :(. You lose!\n ";
+	std::cout << "Sorry, you used all 7 guesses :(. You lose!\n";
+	std::cout << "The number was: " << number << ".\n";
+
 	return false;
 }
