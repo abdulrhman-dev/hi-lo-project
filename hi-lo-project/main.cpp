@@ -1,11 +1,16 @@
 #include <iostream>
 
-int getGuess(int count);
 bool playHiLo(int number);
 bool playAgain();
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int number{ 27 };
+
+	do {
+		playHiLo(number);
+	} while (playAgain());
+
+	return 0;
 }
 
