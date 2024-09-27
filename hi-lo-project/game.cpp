@@ -1,24 +1,29 @@
 #include <iostream>
+
+const int MAX_ATTEMPTS = 7;
+
 int getGuess(int count);
 
-bool playHiLo(int number) 
+bool playHilo(int targetNumber) 
 {
-	for (int i = 1; i < 8; i++)
-	{
-		int guessed_num;
-		guessed_num = getGuess(i);
-		if (guessed_num == number)
-		{
-			std::cout << "Correct! You win!\n";
-			return true;
-		}
-		if (guessed_num > number)
-			std::cout << "Your guess is too high\n";
-		if (guessed_num < number)
-			std::cout << "Your guess is too low\n";
-	}
-	std::cout << "Sorry, you used all 7 guesses :(. You lose!\n";
-	std::cout << "The number was: " << number << ".\n";
+    for (int attempt = 1; attempt <= MAX_ATTEMPTS; ++attempt)
+    {
+        int guessedNumber = getGuess(attempt);
+        
+        if (guessedNumber == targetNumber)
+        {
+            std::cout << "Correct! You win!\n";
+            return true;
+        }
+        
+        if (guessedNumber > targetNumber)
+            std::cout << "Your guess is too high\n";
+        else
+            std::cout << "Your guess is too low\n";
+    }
+    
+    std::cout << "Sorry, you used all " << MAX_ATTEMPTS << " guesses :( You lose!\n";
+    std::cout << "The number was: " << targetNumber << ".\n";
 
-	return false;
+    return false;
 }
