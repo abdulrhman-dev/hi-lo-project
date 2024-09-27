@@ -4,7 +4,7 @@ const int MAX_ATTEMPTS = 7;
 
 int getGuess(int count);
 
-bool playHilo(int targetNumber) 
+bool playHiLo(int targetNumber) 
 {
     for (int attempt = 1; attempt <= MAX_ATTEMPTS; ++attempt)
     {
