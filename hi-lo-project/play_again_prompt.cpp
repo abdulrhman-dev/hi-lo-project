@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 bool playAgain() {
 	while (true) {

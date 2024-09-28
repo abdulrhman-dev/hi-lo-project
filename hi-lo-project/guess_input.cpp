@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 int getGuess(int count) 
 {
